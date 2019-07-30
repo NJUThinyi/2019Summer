@@ -61,3 +61,15 @@ db.commit()  # 提交
     ```
 
   - 游标执行完插入操作`cur.execute(sql)`之后，**必须提交**`db.commit()`才能对数据库表进行更新
+
+### 利用可视化工具Navicat for MySQL将生成的表导出为Excel进行整合
+
+- 问题：打开Excel发现存储进来的数字有些不是数值，而是以文本形式存储的数字，如图示
+
+  ![3.jpg](https://i.loli.net/2019/07/30/5d3fff7f3e1be17922.jpg)
+
+- 解决办法：
+
+  Excel中，点击“数据”→“分列”→“完成”，如图
+
+  [![eJCN9O.png](https://s2.ax1x.com/2019/07/30/eJCN9O.png)](https://imgchr.com/i/eJCN9O)
